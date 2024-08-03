@@ -24,7 +24,7 @@ app.use(session({
 
 async function connectDB(){
   try{
-    mongoose.connect("mongodb://127.0.0.1:27017/FoodShare",{});
+    mongoose.connect("mongodb+srv://iamtsanand:FoodShare123@foodshare.acmsvpc.mongodb.net/?authSource=foodShare&authMechanism=SCRAM-SHA-1",{});
     console.log("connected to mongodb");
   }catch(err){
     console.log("error in mongodb",err);
