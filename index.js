@@ -49,7 +49,7 @@ app.get('/profile', async (req, res) => {
     try {
       const user = await User.findById(userId); // Replace with actual user fetching logic
       if (user) {
-        res.render('Profile-page', { user });
+        res.render('Profile-Page', { user });
       } else {
         res.redirect('/login');
       }
